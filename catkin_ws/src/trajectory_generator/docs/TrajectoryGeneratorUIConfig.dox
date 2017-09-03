@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~vel_trajectory" : \b [double] Velocity in Trajectory Mode min: 0.5, default: 1.0, max: 4.0
+- \b "~acc_trajectory" : \b [double] Acceleration in Trajectory Mode min: 0.5, default: 1.0, max: 5.0
+- \b "~vel_kinematics" : \b [double] Velocity in Kinematics Mode min: 0.5, default: 1.0, max: 2.0
+- \b "~place_holder" : \b [bool] ------------------------------------------------------------------------------- min: False, default: True, max: True
+
