@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="openpose_ros_node" pkg="openpose_ros" type="openpose_ros_node" respawn="false" output="screen">
+	<remap from ="image_left" to="/stereo/left/image_rect" />
+  </node>
+
+
+</launch>

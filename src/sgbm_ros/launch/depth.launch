@@ -1,0 +1,11 @@
+<launch>
+
+  <node name="sgbm_ros_node" pkg="sgbm_ros" type="sgbm_ros_node" respawn="false" output="screen">
+  </node>
+
+  <node name="disp_to_pointcloud_node" pkg="disp_to_pointcloud" type="disp_to_pointcloud_node" respawn="false" output="screen">
+  </node>
+
+  <node name="pose_3d_node" pkg="pose_3d" type="pose_3d_node" respawn="false" output="screen">
+  </node>
+</launch>

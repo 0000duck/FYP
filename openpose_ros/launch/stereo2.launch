@@ -1,0 +1,16 @@
+<launch>
+
+  <node name="openpose_ros_node" pkg="openpose_ros" type="openpose_ros_node" respawn="false" output="screen">
+	<remap from ="image_left" to="/stereo/left/image_rect" />
+	<remap from ="image_right" to="/stereo/right/image_rect" />
+  </node>
+
+  <node name="sgbm_ros_node" pkg="sgbm_ros" type="sgbm_ros_node" respawn="false" output="screen">
+	<remap from ="~image_left" to="/stereo/left/image_rect" />
+	<remap from ="~image_right" to="/stereo/right/image_rect" />
+
+	<param name="p1"   value="700.0"  />
+   	<param name="p2"   value="2400.0" />
+  </node>
+
+</launch>

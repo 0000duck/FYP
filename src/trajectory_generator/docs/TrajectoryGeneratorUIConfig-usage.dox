@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="TrajectoryGeneratorUI" pkg="trajectory_generator" type="TrajectoryGeneratorUI">
+  <param name="vel_trajectory" type="double" value="1.0" />
+  <param name="acc_trajectory" type="double" value="1.0" />
+  <param name="vel_kinematics" type="double" value="1.0" />
+  <param name="place_holder" type="bool" value="True" />
+</node>
+\endverbatim
+
